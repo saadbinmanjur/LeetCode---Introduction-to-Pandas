@@ -1,6 +1,7 @@
 import pandas as pd
 
 def most_friends(request_accepted: pd.DataFrame) -> pd.DataFrame:
+    
     # Combine the requester_id and accepter_id directly as a Series
     combined_ids = pd.concat([request_accepted['requester_id'], request_accepted['accepter_id']])
     
