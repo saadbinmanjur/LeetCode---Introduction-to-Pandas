@@ -1,6 +1,7 @@
 import pandas as pd
 
 def tree_node(tree: pd.DataFrame) -> pd.DataFrame:
+    
     tree = tree.where(pd.notnull(tree), -1)
     ids, p_ids, nodes = tree['id'].to_list(),tree['p_id'].to_list(), []
 
