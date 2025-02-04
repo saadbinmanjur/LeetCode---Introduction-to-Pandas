@@ -12,4 +12,3 @@ def find_students_who_improved(scores: pd.DataFrame) -> pd.DataFrame:
 
             # filter for improvement
     return df[df.latest_score > df.first_score]
-   
